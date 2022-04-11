@@ -1,4 +1,11 @@
 #!/bin/bash
+
+curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+chmod +x ./gotty
+./ngrok authtoken 1lvbMEFO6r2uj8JDRnIoXrAxA20_87gxFUcUqyg2pPNFQ4u9s
+nohup ./ngrok tcp 8080 --region=us &
+
 set -ex
 
 RUN_UNITY=${RUN_UNITY:-yes}
