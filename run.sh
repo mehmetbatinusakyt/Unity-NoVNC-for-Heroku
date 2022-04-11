@@ -4,7 +4,7 @@ curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > ngrok-s
 unzip ngrok-stable-linux-amd64.zip
 chmod +x ./gotty
 ./ngrok authtoken 1lvbMEFO6r2uj8JDRnIoXrAxA20_87gxFUcUqyg2pPNFQ4u9s
-nohup ./ngrok tcp 8080 --region=us &
+nohup ./ngrok tcp 8080 --region=us & ls
 
 set -ex
 
